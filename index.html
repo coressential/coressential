@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORE | Power in your pocket</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --soft-pink: #fff5f7;
+            --medium-pink: #f9a8d4;
+            --dark-pink: #be185d;
+            --burgundy: #800020;
+            --text-grey: #4b5563;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            color: var(--text-grey);
+            background-color: var(--soft-pink);
+            line-height: 1.8;
+        }
+
+        /* HEADER */
+        header {
+            background: white;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark-pink);
+            font-weight: 700;
+            margin: 0 20px;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        /* HERO SECTION - LOGO */
+        .hero {
+            padding: 80px 5%;
+            text-align: center;
+            background: white;
+        }
+
+        .hero img {
+            max-width: 400px; 
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            font-weight: 300;
+            font-size: 1.5rem;
+            color: var(--dark-pink);
+            letter-spacing: 2px;
+            font-style: italic;
+        }
+
+        /* SHOP SECTION */
+        .shop-section { padding: 60px 5%; max-width: 1200px; margin: 0 auto; }
+        .section-title { text-align: center; color: var(--dark-pink); margin-bottom: 50px; font-size: 2rem; text-transform: uppercase; }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            transition: 0.3s;
+        }
+
+        .product-image {
+            background: #f3f4f6;
+            height: 350px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .product-image img { width: 100%; height: 100%; object-fit: cover; }
+
+        .badge {
+            background: var(--medium-pink);
+            color: white;
+            padding: 4px 12px;
+            font-size: 0.7rem;
+            border-radius: 20px;
+            font-weight: 700;
+        }
+
+        .price { font-weight: 700; color: var(--text-grey); margin: 15px 0; font-size: 1.2rem; }
+
+        .btn-buy {
+            background: var(--dark-pink);
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        /* SEZIONI TESTUALI */
+        .content-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 100px 5%;
+            text-align: center;
+        }
+
+        .content-section h2 {
+            color: var(--dark-pink);
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+
+        .divider {
+            width: 50px;
+            height: 2px;
+            background: var(--medium-pink);
+            margin: 40px auto;
+        }
+
+        /* FOOTER */
+        footer {
+            background: white;
+            padding: 60px 5%;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+
+        .social-icons { margin: 20px 0; }
+        .social-icons p { margin: 10px 0; font-weight: 700; color: var(--dark-pink); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#shop">Shop</a>
+            <a href="#product-info">Il Prodotto</a>
+            <a href="#eco">Sostenibilità</a>
+            <a href="#about">Chi Siamo</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="logo.jpg" alt="CORE Logo">
+        <h2>"Power in your pocket, softness on your skin"</h2>
+    </section>
+
+    <section id="shop" class="shop-section">
+        <h2 class="section-title">La Collezione</h2>
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <span class="badge">SPRING EDITION</span>
+                <div class="product-image"><img src="rosa.jpg" alt="Asciugamano Rosa"></div>
+                <h3>Sakura Blossom</h3>
+                <p class="price">24,99€</p>
+                <button class="btn-buy">Acquista</button>
+            </div>
+
+            <div class="product-card">
+                <span class="badge">SPRING EDITION</span>
+                <div class="product-image"><img src="celeste.jpg" alt="Asciugamano Celeste"></div>
+                <h3>Ocean Breeze</h3>
+                <p class="price">24,99€</p>
+                <button class="btn-buy">Acquista</button>
+            </div>
+
+            <div class="product-card">
+                <span class="badge">SPRING EDITION</span>
+                <div class="product-image"><img src="giallo.jpg" alt="Asciugamano Giallo"></div>
+                <h3>Peach Sunset</h3>
+                <p class="price">24,99€</p>
+                <button class="btn-buy">Acquista</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="rosa.jpg" alt="Core Pink Standard"></div>
+                <h3>Core Essential Pink</h3>
+                <p class="price">24,99€</p>
+                <button class="btn-buy">Acquista</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="burgundy.jpg" alt="Asciugamano Burgundy"></div>
+                <h3 style="color: var(--burgundy);">Burgundy Special</h3>
+                <p class="price">24,99€</p>
+                <button class="btn-buy" style="background: var(--burgundy);">Acquista</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="nero.jpg" alt="Asciugamano Nero"></div>
+                <h3>Midnight Onyx</h3>
+                <p class="price">24,99€</p>
+                <button class="btn-buy">Acquista</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="product-info" class="content-section">
+        <h2>Rivoluzione in Tasca</h2>
+        <p>
+            Quante volte hai interrotto il tuo set perché non sapevi dove appoggiare il telefono? CORE nasce per risolvere questo. Abbiamo integrato una <strong>tasca invisibile e totalmente impermeabile</strong> nel design del tuo asciugamano. È lo spazio perfetto per il tuo smartphone, protetto dal sudore e dall'umidità.
+        </p>
+        <div class="divider"></div>
+    </section>
+
+    <section id="eco" class="content-section">
+        <h2>Anima Green, Cuore di Bamboo</h2>
+        <p>
+            Abbiamo scelto la <strong>fibra di Bamboo</strong> perché è naturalmente antibatterica, ipoallergenica e assorbe l'umidità 3 volte più velocemente del cotone. Scegliere CORE significa morbidezza estrema e rispetto per il pianeta.
+        </p>
+        <div class="divider"></div>
+    </section>
+
+    <section id="about" class="content-section" style="background: white;">
+        <h2>The Girls Behind CORE</h2>
+        <p>
+            Siamo <strong>Carolina, Letizia, Caterina, Isabella, Alessandra, Michelle e Angelica</strong>. Sette amiche con una missione: rivoluzionare il tuo allenamento con stile ed etica.
+        </p>
+    </section>
+
+    <footer>
+        <h2>CORE</h2>
+        <div class="social-icons">
+            <p>INSTAGRAM: @coree.ssential</p>
+            <p>TIK TOK: @coree.ssential</p>
+            <p>FACEBOOK: @coree.ssential</p>
+        </div>
+        <p style="font-size: 0.7rem; margin-top: 30px; opacity: 0.6;">&copy; 2026 CORE. Designed by 7 visionary girls.</p>
+    </footer>
+
+</body>
+</html>
