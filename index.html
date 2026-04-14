@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -23,7 +22,6 @@
             line-height: 1.8;
         }
 
-        /* HEADER */
         header {
             background: white;
             padding: 15px 5%;
@@ -45,7 +43,6 @@
             letter-spacing: 1px;
         }
 
-        /* HERO SECTION - LOGO */
         .hero {
             padding: 80px 5%;
             text-align: center;
@@ -67,7 +64,6 @@
             font-style: italic;
         }
 
-        /* SHOP SECTION */
         .shop-section { padding: 60px 5%; max-width: 1200px; margin: 0 auto; }
         .section-title { text-align: center; color: var(--dark-pink); margin-bottom: 50px; font-size: 2rem; text-transform: uppercase; }
 
@@ -96,6 +92,7 @@
             justify-content: center;
             overflow: hidden;
         }
+
         .product-image img { width: 100%; height: 100%; object-fit: cover; }
 
         .badge {
@@ -121,7 +118,6 @@
             text-transform: uppercase;
         }
 
-        /* SEZIONI TESTUALI */
         .content-section {
             max-width: 800px;
             margin: 0 auto;
@@ -147,7 +143,6 @@
             margin: 40px auto;
         }
 
-        /* FOOTER */
         footer {
             background: white;
             padding: 60px 5%;
@@ -161,103 +156,83 @@
 </head>
 <body>
 
-    <header>
-        <nav>
-            <a href="#shop">Shop</a>
-            <a href="#product-info">Il Prodotto</a>
-            <a href="#eco">Sostenibilità</a>
-            <a href="#about">Chi Siamo</a>
-        </nav>
-    </header>
+<header>
+    <nav>
+        <a href="#shop">Shop</a>
+        <a href="#product-info">Il Prodotto</a>
+        <a href="#eco">Sostenibilità</a>
+        <a href="#about">Chi Siamo</a>
+    </nav>
+</header>
 
-    <section class="hero">
-        <img src="logo.jpg" alt="CORE Logo">
-        <h2>"Power in your pocket, softness on your skin"</h2>
-    </section>
+<section class="hero">
+    <img src="logo.jpeg" alt="CORE Logo">
+    <h2>"Power in your pocket, softness on your skin"</h2>
+</section>
 
-    <section id="shop" class="shop-section">
-        <h2 class="section-title">La Collezione</h2>
-        <div class="product-grid">
-            
-            <div class="product-card">
-                <span class="badge">SPRING EDITION</span>
-                <div class="product-image"><img src="rosa.jpg" alt="Asciugamano Rosa"></div>
-                <h3>Sakura Blossom</h3>
-                <p class="price">24,99€</p>
-                <button class="btn-buy">Acquista</button>
-            </div>
+<section id="shop" class="shop-section">
+    <h2 class="section-title">La Collezione</h2>
+    <div class="product-grid">
 
-            <div class="product-card">
-                <span class="badge">SPRING EDITION</span>
-                <div class="product-image"><img src="celeste.jpg" alt="Asciugamano Celeste"></div>
-                <h3>Ocean Breeze</h3>
-                <p class="price">24,99€</p>
-                <button class="btn-buy">Acquista</button>
-            </div>
-
-            <div class="product-card">
-                <span class="badge">SPRING EDITION</span>
-                <div class="product-image"><img src="giallo.jpg" alt="Asciugamano Giallo"></div>
-                <h3>Peach Sunset</h3>
-                <p class="price">24,99€</p>
-                <button class="btn-buy">Acquista</button>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image"><img src="rosa.jpg" alt="Core Pink Standard"></div>
-                <h3>Core Essential Pink</h3>
-                <p class="price">24,99€</p>
-                <button class="btn-buy">Acquista</button>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image"><img src="burgundy.jpg" alt="Asciugamano Burgundy"></div>
-                <h3 style="color: var(--burgundy);">Burgundy Special</h3>
-                <p class="price">24,99€</p>
-                <button class="btn-buy" style="background: var(--burgundy);">Acquista</button>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image"><img src="nero.jpg" alt="Asciugamano Nero"></div>
-                <h3>Midnight Onyx</h3>
-                <p class="price">24,99€</p>
-                <button class="btn-buy">Acquista</button>
-            </div>
+        <div class="product-card">
+            <span class="badge">SPRING EDITION</span>
+            <div class="product-image"><img src="prodotto.jpeg" alt="Asciugamano Rosa"></div>
+            <h3>Sakura Blossom</h3>
+            <p class="price">24,99€</p>
+            <button class="btn-buy">Acquista</button>
         </div>
-    </section>
 
-    <section id="product-info" class="content-section">
-        <h2>Rivoluzione in Tasca</h2>
-        <p>
-            Quante volte hai interrotto il tuo set perché non sapevi dove appoggiare il telefono? CORE nasce per risolvere questo. Abbiamo integrato una <strong>tasca invisibile e totalmente impermeabile</strong> nel design del tuo asciugamano. È lo spazio perfetto per il tuo smartphone, protetto dal sudore e dall'umidità.
-        </p>
-        <div class="divider"></div>
-    </section>
-
-    <section id="eco" class="content-section">
-        <h2>Anima Green, Cuore di Bamboo</h2>
-        <p>
-            Abbiamo scelto la <strong>fibra di Bamboo</strong> perché è naturalmente antibatterica, ipoallergenica e assorbe l'umidità 3 volte più velocemente del cotone. Scegliere CORE significa morbidezza estrema e rispetto per il pianeta.
-        </p>
-        <div class="divider"></div>
-    </section>
-
-    <section id="about" class="content-section" style="background: white;">
-        <h2>The Girls Behind CORE</h2>
-        <p>
-            Siamo <strong>Carolina, Letizia, Caterina, Isabella, Alessandra, Michelle e Angelica</strong>. Sette amiche con una missione: rivoluzionare il tuo allenamento con stile ed etica.
-        </p>
-    </section>
-
-    <footer>
-        <h2>CORE</h2>
-        <div class="social-icons">
-            <p>INSTAGRAM: @coree.ssential</p>
-            <p>TIK TOK: @coree.ssential</p>
-            <p>FACEBOOK: @coree.ssential</p>
+        <div class="product-card">
+            <span class="badge">SPRING EDITION</span>
+            <div class="product-image"><img src="prodotto1.jpg" alt="Asciugamano Celeste"></div>
+            <h3>Ocean Breeze</h3>
+            <p class="price">24,99€</p>
+            <button class="btn-buy">Acquista</button>
         </div>
-        <p style="font-size: 0.7rem; margin-top: 30px; opacity: 0.6;">&copy; 2026 CORE. Designed by 7 visionary girls.</p>
-    </footer>
+
+        <div class="product-card">
+            <span class="badge">SPRING EDITION</span>
+            <div class="product-image"><img src="prodotto2.jpg" alt="Asciugamano Giallo"></div>
+            <h3>Peach Sunset</h3>
+            <p class="price">24,99€</p>
+            <button class="btn-buy">Acquista</button>
+        </div>
+
+    </div>
+</section>
+
+<section id="product-info" class="content-section">
+    <h2>Rivoluzione in Tasca</h2>
+    <p>
+        Quante volte hai interrotto il tuo set perché non sapevi dove appoggiare il telefono? CORE nasce per risolvere questo. Abbiamo integrato una <strong>tasca invisibile e totalmente impermeabile</strong> nel design del tuo asciugamano. È lo spazio perfetto per il tuo smartphone, protetto dal sudore e dall'umidità.
+    </p>
+    <div class="divider"></div>
+</section>
+
+<section id="eco" class="content-section">
+    <h2>Anima Green, Cuore di Bamboo</h2>
+    <p>
+        Abbiamo scelto la fibra di Bamboo perché è naturalmente antibatterica, ipoallergenica e assorbe l'umidità 3 volte più velocemente del cotone. Scegliere CORE significa morbidezza estrema e rispetto per il pianeta.
+    </p>
+    <div class="divider"></div>
+</section>
+
+<section id="about" class="content-section" style="background: white;">
+    <h2>The Girls Behind CORE</h2>
+    <p>
+        Siamo <strong>Carolina, Letizia, Caterina, Isabella, Alessandra, Michelle e Angelica</strong> .Sette amiche con una missione: rivoluzionare il tuo allenamento con stile ed etica.
+    </p>
+</section>
+
+<footer>
+    <h2>CORE</h2>
+    <div class="social-icons">
+        <p>INSTAGRAM: @coree.ssential</p>
+        <p>TIK TOK: @coree.ssential</p>
+        <p>FACEBOOK: @coree.ssential</p>
+    </div>
+    <p style="font-size: 0.7rem; margin-top: 30px; opacity: 0.6;">&copy; 2026 CORE</p>
+</footer>
 
 </body>
 </html>
